@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speedway Planet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+	}
+    .container {
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      color: #bbbbbb;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #dddddd;
+    }
+
+    .tagline {
+      margin-top: 30px;
+      font-style: italic;
+      color: #aaaaaa;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #666666;
+    }
+
+    .accent {
+      color: #f39c12;
+    }
+	
+    .imsrc {
+      margin-top: 40px;
+      font-size: 0.6rem;
+      color: #666666;
+    }
+	.lang-switch {
+	  position: absolute;
+	  top: 20px;
+	  right: 20px;
+	}
+
+	.lang-switch img {
+	  width: 28px;
+	  margin-left: 10px;
+	  cursor: pointer;
+	  border-radius: 3px;
+	  transition: transform 0.2s ease;
+	}
+
+	.lang-switch img:hover {
+	  transform: scale(1.1);
+	}
+	
+	.bg-container {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  z-index: -1;
+	}
+
+	.bg {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  background-size: cover;
+	  background-position: center;
+	  opacity: 0;
+	  animation: fade 12s infinite;
+	}
+
+	.bg1 {
+	  background-image: url('images/bg-old.jpg');
+	  animation-delay: 0s;
+	}
+
+	.bg2 {
+	  background-image: url('images/bg-new.jpg');
+	  animation-delay: 6s;
+	}
+
+	@keyframes fade {
+	  0% { opacity: 0; }
+	  10% { opacity: 0.15; }
+	  40% { opacity: 0.15; }
+	  50% { opacity: 0; }
+	  100% { opacity: 0; }
+	}
+	
+  </style>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+</head>
+
+<body>
+	<div class="lang-switch">
+	  <a href="index.html">
+		<img src="images/flag-en.png" alt="English">
+	  </a>
+	  <a href="pl.html">
+		<img src="images/flag-pl.png" alt="Polski">
+	  </a>
+	</div>
+	<div class="bg-container">
+	  <div class="bg bg1"></div>
+	  <div class="bg bg2"></div>
+	</div>
+  <div class="container">
+
+    <h1>Speedway Planet</h1>
+    <h2>The only speedway website you need</h2>
+
+    <p>
+      Speedway, redefined.<br><br>
+      A global archive of results, riders and history — rebuilt from the ground up.
+    </p>
+
+    <p class="tagline">
+      It’s time to look at the shale differently.<br>
+      The history you know — connected, structured, and ready to reveal more.
+    </p>
+
+    <div class="footer">
+      Launching soon.
+    </div>
+	<input type="email" placeholder="Enter your email">
+	<button>Notify me</button>
+  	<div class="imsrc">
+		Background Images: Ray Olsen / Mitchell Library, State Library of New South Wales / Wikimedia Commons (Public Domain) & Loco Steve / Wikimedia Commons (CC BY-SA 2.0)
+	</div>
+  </div>
+</body>
+</html>
